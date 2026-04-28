@@ -46,4 +46,4 @@ https://d-weimer.github.io/scoundrel-solo-card-game/
 
 ---
 
-_Created by Daniel Weimer — 2026_
+_Created by Daniel J. Weimer — 2026_
