@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoundrel: Solo Card Dungeon</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scoundrel: Card Dungeon</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <h1>Scoundrel</h1>
+
+        <div class="stats-container">
+          <div class="spacer"></div>
+
+          <div id="stats">
+            <div class="stat-box">
+              HP<span class="stat-val" id="hp">20</span>
+            </div>
+            <div class="stat-box">
+              Shield<span class="stat-val" id="shield">0</span>
+            </div>
+            <div class="stat-box">
+              Last Monster<span class="stat-val" id="last-monster">0</span>
+            </div>
+          </div>
+
+          <button id="info-btn" title="How to play">i</button>
+        </div>
+
+        <div id="room"></div>
+
+        <div class="controls">
+          <button id="deal-btn">Next Room</button>
+          <button id="flee-btn">Flee Room</button>
+          <button id="restart-btn" style="display: none">Restart Game</button>
+        </div>
+
+        <div class="log" id="log">Welcome. Deal the first room.</div>
+        <div class="deck-count">
+          Cards left in deck: <span id="deck-count">0</span>
+        </div>
+
+        <div id="info-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+              <h2>How to Play</h2>
+              <ul>
+                <li>
+                  <strong>Goal:</strong> Clear the deck and survive with at
+                  least 1 HP.
+                </li>
+                <li>
+                  <strong>Combat:</strong> Fight Monsters (Clubs/Spades) by
+                  subtracting your Shield value from the monster's value. Any
+                  leftover damage hits your HP.
+                </li>
+                <li>
+                  <strong>Shields:</strong> Diamonds grant a shield. You can
+                  only use a shield against a monster <em>weaker</em> than the
+                  last one you fought with it, or it breaks.
+                </li>
+                <li><strong>Potions:</strong> Hearts heal you.</li>
+                <li>
+                  <strong>Room Rules:</strong> You must play 3 cards to move to
+                  the next room. You can only use
+                  <strong>one Potion and one Shield per room</strong>; others
+                  are discarded.
+                </li>
+                <li>
+                  <strong>Fleeing:</strong> You can flee a room if you haven't
+                  played any cards yet, but you cannot flee twice in a row.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
+    <script src="./script.js"></script>
+  </body>
+</html>
