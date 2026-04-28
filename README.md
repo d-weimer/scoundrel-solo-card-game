@@ -4,7 +4,7 @@ A web-based implementation of the tactical solo card game **Scoundrel**. Navigat
 
 ## 🎮 Live Demo
 
-_Link your GitHub Pages URL here once deployed!_
+https://d-weimer.github.io/scoundrel-solo-card-game/
 
 ## ✨ Features
 
